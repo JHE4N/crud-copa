@@ -1,0 +1,42 @@
+<%- include('layout/footer') %>
+<div class="container">
+   <div class="row">
+     <div class="col-lg-6 mx-auto mt-4">
+        <div class="card shadow">
+          <div class="card-header bg-primary">
+             <h3 class="text-light">Novo Jogador</h3>
+          </div>
+          <div class="card-body p-4">
+             <form action="/add" method="post" id="add-form" enctype="multipart/form-data">
+                <div class="mb-3">
+                  <label for="nome">Nome</label>
+                  <input type="text" name="nome" class="form-control form-control-lg"  placeholder="Nome do Jogador" required />
+                </div>
+
+                <div class="mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="form-control form-control-lg"  placeholder="Email ou telefone" required />
+                </div>
+                 
+                <div class="mb-3">
+                    <label for="Telefone">Idade</label>
+                    <input type="tel" name="Telefone" class="form-control form-control-lg"  placeholder="Idade do Jogador" required />
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="posicao">Posição</label>
+                    <input type="tel" name="posicao" class="form-control form-control-lg"  placeholder="Insira a posição" required />
+                  </div>
+                 
+                  <div class="mb-3 d-grid">
+                    <input type="submit" name="submit" value = "Cadastrar Jogador" class="btn btn-primary btn-lg" />
+                  </div>
+                </div>
+
+             </form>
+          </div>
+        </div>
+     </div>
+   </div>
+</div>
